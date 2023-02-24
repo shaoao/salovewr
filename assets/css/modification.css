@@ -1,0 +1,11 @@
+.fc-title{
+	word-wrap: break-word;
+}
+
+#truth_words p{
+	color: lightpink;
+}
+
+.fc-view-container{
+	border-radius: 1.5rem;
+}
