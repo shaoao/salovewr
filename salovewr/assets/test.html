@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>距离指定日期还剩多少天</title>
+</head>
+<body>
+    <br><br>
+    <div id="result"></div>
+    <div id="result1"></div>
+    
+    <script>
+        function calcDays(month,name,div) {
+            // 获取输入的日期
+            var inputDate = new Date();
+            var date = inputDate.getFullYear();
+            inputDate = date + "-" + month;
+            console.log(inputDate);
+            // 将输入的日期转化为时间戳
+            var targetDate = new Date(inputDate).getTime();
+            // 获取当前日期
+            var currentDate = new Date().getTime();
+            // 计算距离指定日期还剩多少毫秒
+            var remainTime = targetDate - currentDate;
+            // 将毫秒转化为天数
+            var remainDays = Math.floor(remainTime / (1000 * 60 * 60 * 24));
+            // 显示结果
+            document.getElementById(div).innerHTML = "距离" + name + "的 " + date + " 年生日还剩 " + remainDays + " 天";
+            return remainDays;
+        }
+
+        
+        var a = this.calcDays("11-28","邵奥","result");
+        this.calcDays("09-10","王蕊","result1");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.fc-title {
+  word-wrap: break-word;
+}
+
+#truth_words p {
+  color: lightpink;
+}
+
+.fc-view-container {
+  border-radius: 1.5rem;
+}
+
+.tx1 {
+  transition: all 0.5s;
+}
+.tx1:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.tx2 {
+  transition: all 0.5s;
+}
+.tx2:hover {
+  transform:rotateX(40deg) rotateZ(20deg);
+}
