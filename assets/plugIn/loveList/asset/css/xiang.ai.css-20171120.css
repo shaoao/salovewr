@@ -1,0 +1,366 @@
+@charset "utf-8";
+@import url("reset.import.css")/*tpa=https://lovelist.us/asset/css/reset.import.css*/;
+body {font-size:14px;line-height: 1.5;font-family:-apple-system,'Helvetica Neue','Helvetica','Tahoma','Arial','Hiragino Sans GB','PingFang SC',STHeiTi,'Microsoft Yahei';color:#383838;}
+.ielt8 body {font-family:'Microsoft Yahei',tahoma; }
+a {color:#ff557d;text-decoration:none;}
+button {white-space:nowrap;overflow:visible;}
+.none {display: none;}
+@font-face {
+  font-family: 'lovelist';
+  src: url("font/lovelist.eot")/*tpa=https://lovelist.us/asset/css/font/lovelist.eot*/;
+  src:
+    url("font/lovelist.eot-#font-spider")/*tpa=https://lovelist.us/asset/css/font/lovelist.eot?#font-spider*/ format('embedded-opentype'),
+    url("font/lovelist.woff")/*tpa=https://lovelist.us/asset/css/font/lovelist.woff*/ format('woff'),
+    url("font/lovelist.ttf")/*tpa=https://lovelist.us/asset/css/font/lovelist.ttf*/ format('truetype'),
+    url("font/lovelist.svg")/*tpa=https://lovelist.us/asset/css/font/lovelist.svg*/ format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* arrow */
+.arrow {display:inline-block;font:0/0 arial;height:0;width:0;overflow:hidden;}
+.darr,.darr-in,
+.uarr,.uarr-in {border-right-color:transparent!important;border-left-color:transparent!important;border-right-style:dashed!important;border-left-style:dashed!important;}
+.darr,.darr-in {border-top-style:solid!important;}
+.uarr,.uarr-in {border-bottom-style:solid!important;}
+.rarr,.rarr-in,
+.larr,.larr-in {border-top-color:transparent!important;border-bottom-color:transparent!important;border-top-style:dashed!important;border-bottom-style:dashed!important;}
+.rarr,.rarr-in {border-left-style:solid!important;}
+.larr,.larr-in {border-right-style:solid!important;}
+/* ico */
+.ico {display:inline-block;width:16px;height:16px;vertical-align:middle;}
+/* msg tips */
+.msg-wrap {position: fixed;z-index: 999;top:300px;left:0;right: 0;text-align: center;}
+.msg {
+	padding:10px;color:#fff;text-align: left;display: inline-block;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.7);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#B2000000,endcolorstr=#B2000000);
+}
+.msg .ico,.msg .txt {display: inline-block;vertical-align: middle;}
+.msg .ico {
+	width: 22px;height: 22px;line-height: 22px;text-align: center;font-size: 13px;margin-right: 5px;
+	border:1px solid #fff;
+	border-radius: 100%;
+}
+.ielt9 .msg .ico {border:0 none;}
+
+.header,.mainer,.footer,.banner {max-width:600px;_width:600px;margin:0 auto;}
+.header::after,.header::before,.about .info::before,.about .info::after {display: table;content: '';}
+.header::after,.about .info::after {clear:both;}
+.header {padding:60px 0 40px;zoom:1;}
+.logo {/*display:inline-block;vertical-align:middle;*/margin-right:20px;float: left;}
+.logo .ico {width:64px;height:80px;background-image:url("img/logo.png")/*tpa=https://lovelist.us/asset/css/img/logo.png*/;margin:0 15px 0 0;color:transparent;}
+.logo .txt {color:#383838;font-family: 'lovelist';font-weight: normal;font-size:72px;line-height:1.2;display: inline-block;vertical-align:middle;}
+.ielt8 .logo .i-love {top:4px;}
+.lover-info,.description {overflow: hidden;zoom:1;}
+.lover-info {padding: 8px 0 0;}
+.lover-image {position: relative;display: inline-block;vertical-align: middle;margin-right: 10px;letter-spacing:-.33em;}
+.lover-image .lover {
+	display: inline-block;width:30px;height:30px;color:transparent;vertical-align: top;
+	background-color: #ddd;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border-radius: 100%;
+	box-shadow:inset 0 0 1px rgba(0,0,0,.2);
+	margin-right: 2px;
+}
+.lover-image .icon-heart {position: absolute;left: 50%;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;background-image: url("img/heart-16.png")/*tpa=https://lovelist.us/asset/css/img/heart-16.png*/;}
+.lover-date {display: inline-block;vertical-align: middle;font-size: 24px;line-height: 28px;}
+.lover-date .days {font-family: impact;color:#ff557d;letter-spacing: 4px;margin:0 4px;}
+.description {line-height: 1.33;margin-top:5px;}
+/*.description a {border-bottom:1px solid #f15bb5}*/
+/* form */
+.form {margin:0 0 30px;}
+.form legend {font-weight:700;padding-right:10px;}
+.form .field,
+.form .action {display: inline-block;vertical-align: top;}
+.ielt8 .form .field,
+.ielt8 .form .action {display: inline;zoom:1;}
+.form .field {width:42%;}
+.form .action {width:14%;}
+.flex-input {display: inline-block;width:100%;}
+.flex-input-inner {padding-right:10px;display: block;}
+.flex-input input,
+.flex-input textarea {font-size: 14px;resize:none;width:100%;vertical-align: top;padding:4px;border-style:solid;border-width:1px;border-color:#aaa #e5e5e5 #e5e5e5 #aaa;}
+.form button {border:0 none;background-color:#f36;color:#fff;padding:4px 0;width:100%;vertical-align:middle;font-size: inherit;}
+.ielt8 .form button {padding:0;}
+
+/*.form-login {display:none;}*/
+.form-add .field {width:84.5%;}
+
+.event-list {}
+.event {padding:12px 0;font-size:16px;border-top:1px solid #e5e5e5;position: relative;#zoom:1;}
+.event .event-order {position: absolute;right:0; top: 0;bottom: 0;font-size: 48px;color:#ddd;overflow: hidden;text-align: right;}
+.event .event-order .order-txt {display: none;}
+.event:hover .event-order {color:#63676f;}
+.event .event-state,
+.event-detail .state-ico {display: inline-block;vertical-align: middle;width:16px;height:16px;margin-right: 5px;overflow: hidden;color:transparent;background-image: url("img/checkbox-unchecked.png")/*tpa=https://lovelist.us/asset/css/img/checkbox-unchecked.png*/;-webkit-background-size:cover;background-size:cover;}
+.event.done .event-state {background-image: url("img/checkbox-checked.png")/*tpa=https://lovelist.us/asset/css/img/checkbox-checked.png*/;}
+.event-detail .state-ico.checked {background-image: url("img/checkbox-checked.png")/*tpa=https://lovelist.us/asset/css/img/checkbox-checked.png*/;}
+.event .event-title {display: inline-block;vertical-align: middle;font-size: 16px;font-weight: normal;}
+.ielt9 .ie8-hide,
+.ielt9 .event .event-state .txt {visibility: hidden;}
+.ielt9 .event .event-title {display:inline;zoom:1;}
+/*.event .flex-input {width:80%;}
+.event .flex-input input {border:0 none;font-size: 16px;}
+.event .flex-input input:disabled {background-color: transparent;color:inherit;}*/
+
+
+.event-detail {display: none;}
+.event-detail .event-image {position: relative;zoom:1;margin:0 -12px;}
+.ielt9 .event-detail .event-image {margin:0 -13px;}
+.event-detail .event-image .img {
+	display: block;padding-top: 50%;
+	background-position: 50% 50%;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.event-detail .event-image .mask {position: absolute;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0,0,0,.5);}
+.ielt9 .event-detail .event-image .mask {
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#7f000000', EndColorStr='#7f000000');
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#7f000000', EndColorStr='#7f000000');
+	zoom:1;
+}
+.event-detail .event-image .btn-upload {position: absolute;left:50%;top:50%;margin:-18px 0 0 -52px;width:100px;text-align: center;line-height: 32px;font-size: 16px;color:#f66;border:2px solid #f66;background-color: transparent;}
+.event-detail .event-image .input-file {position: absolute;left: 0;top: 0;opacity: 0;filter:alpha(opacity=0);}
+.event-detail .event-remark {margin:10px 0 0;}
+.event-detail .state {position: relative;zoom:1;overflow: hidden;}
+.event-detail .state-checkbox {position: absolute;left: 0;top: 0;opacity: 0;filter:alpha(opacity=0);}
+.event-detail .datetime {border:1px solid #ddd;}
+.event-detail .datetime .txt {border-width:0 1px;border-style: solid;border-color:#ddd;padding:0 4px;display: inline-block;vertical-align: top;height:24px;background-color: #f8f8f8;}
+.event-detail .datetime .last-txt {border-right: 0 none;}
+.event-detail .datetime .state-date {border:0 none;padding:0 4px;height:24px;line-height: 24px;font-size: 16px;text-align: center;vertical-align: top;}
+.event-detail .datetime .state-date[size="2"] {width:20px;}
+.event-detail .datetime .state-date[size="4"] {width:40px;}
+.event-action {display: none;margin:0 -12px -12px;overflow: hidden;}
+.event-action .t-bdr {display: block;width:100%;height:1px;background-color: #ddd;}
+.event-action .btn {
+	cursor:pointer;border:0 none;float: left;width:50%;
+	font-size: 16px;padding:10px 0;
+	background-color: transparent;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+.event-action .btn-save {font-weight: 700;}
+.event-action .btn-del {border-left:1px solid #ddd;}
+/* show */
+.event.show {-webkit-box-shadow:0 0 15px rgba(0,0,0,.2);box-shadow:0 0 15px rgba(0,0,0,.2);border-style:solid;border-width:4px 0 0;border-color:#f15bb5;-webkt-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;padding:12px;z-index: 100;}
+.ielt9 .event.show {border-width:4px 1px 1px;border-color:#f15bb5 #ddd #ddd;}
+.event.show + .event {border-top: 0 none;}
+.event.show + .event::after {display: none;}
+.event.show .event-order {position: static;display: inline-block;vertical-align: middle;text-align:left;color:inherit;font-size: 16px;}
+.event.show .event-order .order-txt {display:inline;}
+.event.show .event-title {font-size: 36px;font-weight: 700;display: block;}
+.event.show .event-state {overflow: auto;width:auto;height:auto;margin:0;background: none!important;color:inherit;}
+.event.show .flex-input {margin:10px 0;}
+.event.show .flex-input-inner {padding-right: 22px;}
+.event.show .flex-input input {margin:0;padding:4px 10px;font-size: 18px;}
+.event.show .input-remark input {font-size: 16px;}
+
+/*.event.show .flex-input,*/
+.event.show .event-detail,
+.event.show .event-action {display:block;}
+
+.event.doing.show {border-top-color:#63676f;}
+.event.doing .event-image .img {
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+/* manage */
+.manage .event.show .event-title {display: none;}
+.manage .event.show .state {padding:0 0 10px;}
+.manage .event.show .datetime {float: right;}
+.manage .event.show .state input,
+.manage .event.show select {
+	font-family: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.manage .event.show select {background-color: transparent;}
+/*.manage .event.show .state input {
+	width:16px;height:16px;vertical-align: middle;margin:0 5px 0 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url(img/checkbox-unchecked.png);
+}
+.manage .event.show .state input:checked {
+	background-image: url(img/checkbox-checked.png);
+}*/
+.manage .event.show .state label {vertical-align: middle;}
+
+.mod-message p {
+	padding: .5em 0
+}
+.mod-message .btn {
+	display: block;text-align: center;font-size: 16px;
+	/*height: 36px;*/line-height: 36px;
+	width:100%;
+	border:2px solid #ff557d;
+	box-sizing:border-box;
+	/*background-color:#ff557d;
+	border:0 none;
+	border-radius: 3px;
+	color:#fff;*/
+}
+.mod-message .user .img {
+	width:24px;height: 24px;display: inline-block;vertical-align: middle;margin-right: 5px;
+	border-radius: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.mod-message .user .txt {display: inline-block;vertical-align: middle;}
+.message-list {padding:10px 0;/*margin:15px 0 0;border-top:2px solid #ff557d;*/}
+.message-list .list {list-style:none;}
+.message-list li {
+	padding: 15px 0;position: relative;
+	border-bottom: 1px dotted #e5e5e5;
+}
+.message-list .says .qt-l,
+.message-list .says .qt-r {display: inline-block;width:16px;height:16px;margin-right: 5px;vertical-align: middle;background-image: url("img/dot.png")/*tpa=https://lovelist.us/asset/css/img/dot.png*/;background-position: 0 0;background-repeat: no-repeat;-webkit-background-size: 32px 16px;background-size: 32px 16px;}
+.message-list .says .qt-r {background-position: -16px 0;margin:0 0 0 5px;}
+.message-list .avatar {
+	display: inline-block;vertical-align: middle;margin-right: 10px;
+}
+.message-list .avatar img {
+	width:30px;height:30px;vertical-align:top;border-radius:100%;
+}
+/*.message-list .detail {
+	overflow: hidden;
+	zoom: 1;
+	padding-left: 10px
+}
+.message-list .detail p {
+	line-height: 1.2
+}*/
+.message-list .says {
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #999;
+	margin: 10px 0 0;
+	line-height: 1.33;
+}
+/*.message-list .detail .says .arrow {
+	position: absolute;
+	left: -5px;
+	top: 4px;
+	border-width: 4px 4px 4px 0;
+	border-right-color:#dcdcdc;
+}
+.message-list .detail .says .larr-in {
+	left: -4px;
+	border-right-color:#f8faff;
+}*/
+.message-list .fn,.message-list .sum {
+	font-weight: 700;
+	margin-right: 5px
+}
+.message-list .sum {
+	font-family: georgia;
+	margin-left: 5px;
+	color: #d00
+}
+.message-list time {
+	margin: 0 5px;
+	color: #666
+}
+.message-list .btn-msgdelete {
+	display: none;position: absolute;right:0;top:17px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	font-size: 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 3px;
+}
+.message-list li:hover .btn-msgdelete {display: block;}
+.pages {
+	padding: 10px 0;
+	margin-left: -10px
+}
+.pages span,.pages a {
+	display: inline-block;
+	padding: 0 10px;
+	font-weight: 700;line-height: 40px;
+}
+.pages .disabled {
+	color: #999
+}
+.pages .current {
+	color: #FFBC1F
+}
+
+.footer {padding:10px 0 40px;border-top:1px solid #e6e6e6;}
+.copyright {color:#999;font-size: 12px;}
+/* ielt8 inline-block */
+.ielt8 .logo,
+.ielt8 .about,
+.ielt8 .form-login p {display:inline;zoom:1;}
+@media (max-width:640px) {
+	.header {padding:15px;/*position: relative;background-image: url(img/cover-2.jpg);-webkit-background-size:cover;background-size:cover;*/}
+	.logo {display: none;}
+	.lover-info {text-align: center;}
+	.lover-image .lover {width:48px;height:48px;}
+	.lover-date {display: block;margin:4px 0 0;}
+	.description {margin:15px 0 0;}
+	/*.logo {display: none;text-align: center;margin:0;line-height: 1.2;}
+	.logo .i-love {
+		width: 48px;height: 48px;margin-right: 5px;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.logo a {font-size: 48px;}
+	.description {display: block;padding:10px;background-color: #f8f8f8;margin:30px 0 0;}*/
+	.form {margin:0 15px 30px;}
+	.form legend {text-align: center;}
+	.form .field,
+	.form .action {width:100%;display: block;margin:10px 0 0;}
+	.form p:first-child {margin:0;}
+	.form input::placeholder {color:#ccc;}
+	.flex-input-inner {padding-right:22px;}
+	.flex-input input,
+	.flex-input textarea {padding:7px 10px;font-size: 18px;}
+	.form button {
+		font-size: 18px;display: block;width: 100%;padding:0;height: 38px;
+	}
+	.event-list {padding:0 15px;}
+	.event-list .event {font-size: 16px;}
+	.mod-message {padding:0 15px;}
+	.message-list {padding:10px 15px;}
+	.footer {margin:0;padding:15px 0;text-align: center;}
+}
+@media (-webkit-min-device-pixel-ratio:2) {
+	.logo .ico {background-image: url("img/logo@2x.png")/*tpa=https://lovelist.us/asset/css/img/logo@2x.png*/;-webkit-background-size:cover;background-size:cover;}
+	.lover-info .icon-heart {background-image: url("img/heart-16@2x.png")/*tpa=https://lovelist.us/asset/css/img/heart-16@2x.png*/;-webkit-background-size:cover;background-size:cover;}
+	.event {border:0 none;}
+	.event:after {
+		content: '';position: absolute;left: 0;right: 0;top: 0;border-top: 1px solid #ccc;
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.event .event-state,
+	.event-detail .state-ico {background-image: url("img/checkbox-unchecked@2x.png")/*tpa=https://lovelist.us/asset/css/img/checkbox-unchecked@2x.png*/;}
+	.event.done .event-state,
+	.event-detail .state-ico.checked {background-image: url("img/checkbox-checked@2x.png")/*tpa=https://lovelist.us/asset/css/img/checkbox-checked@2x.png*/;}
+	.message-list .says .qt-l,
+	.message-list .says .qt-r {background-image: url("img/dot@2x.png")/*tpa=https://lovelist.us/asset/css/img/dot@2x.png*/;}
+}
+@media (-webkit-min-device-pixel-ratio:3) {
+	.event:after {
+		-webkit-transform: scaleY(.3333);
+		transform: scaleY(.3333);
+	}
+}
+
+

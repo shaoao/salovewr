@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>瀑布流图片展示</title>
+	<style>
+		/* 全局样式 */
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+		}
+
+		/* 图片容器 */
+		.wrapper {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: stretch;
+			align-items: stretch;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #fff;
+			box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+		}
+
+		/* 单个图片卡片 */
+		.card {
+			margin-bottom: 25px;
+			flex-basis: calc((100% / 3) - 30px);
+			box-sizing: border-box;
+			box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
+			overflow: hidden;
+		}
+
+		/* 图片的显示和居中 */
+		.card img {
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: auto;
+			transition: transform .2s ease-in-out;
+			transform: scale(1);
+		}
+
+		/* 图片悬停效果 */
+		.card:hover img {
+			transform: scale(1.1);
+		}
+
+		/* 图片标题和描述 */
+		.card-content {
+			padding: 15px;
+			text-align: center;
+			background-color: #fff;
+		}
+
+		.card-title {
+			margin: 0;
+			font-size: 18px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		.card-description {
+			margin: 10px 0;
+			font-size: 14px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="img\dataImgs\3.8gg.jpg" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="img\dataImgs\3.9gg.jpg" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+        		<!-- 单个图片卡片 -->
+		<div class="card">
+			<img src="https://placekitten.com/300/300" alt="图片描述">
+			<div class="card-content">
+				<h3 class="card-title">图片标题</h3>
+				<p class="card-description">图片描述</p>
+			</div>
+		</div>
+		<!-- End 单个图片卡片 -->
+	</div>
+</body>
+</html>
